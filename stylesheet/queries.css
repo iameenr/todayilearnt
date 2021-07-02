@@ -1,0 +1,61 @@
+@media only screen and (max-width: 870px) {
+    nav ul li.resp a:link,
+    nav ul li.resp a:visited {
+        display: block;
+        right: 0px;
+        color: #000;
+    }
+    nav ul li.resp a:hover,
+    nav ul li.resp a:active {
+        color: #fff;
+    }
+    nav ul li.resp {
+        display: inline;
+    }
+    ul.resli li {
+        display: block;
+        float: none;
+    }
+    ul.resli li a {
+        display: block !important;
+        width: 100%;
+        float: none;
+    }
+    .navli {
+        width: 25%;
+    }
+    .frm {
+        width: 50%;
+    }
+    nav ul li.navli a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .frm {
+        width: 50%;
+        padding: 10% 10%;
+    }
+    .frm h2 {
+        margin: 0%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact h2 {
+        width: 100%;
+    }
+    .frm {
+        width: 100%;
+    }
+    .frm1 {
+        padding: 15%;
+    }
+    .bsdh {
+        width: 60%;
+        margin: 0% 20%;
+    }
+}
