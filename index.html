@@ -1,4 +1,4 @@
-++-<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,394 +10,129 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheet/styles.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet/queries.css" />
-
-    <style>
-        .slideUp {
-            animation-name: slideUp;
-            -webkit-animation-name: slideUp;
-            animation-duration: 0.8s;
-            -webkit-animation-duration: 0.8s;
-            visibility: visible;
-            /*box-shadow: 5px 5px 3px #737373;*/
-        }
-        
-        @keyframes slideUp {
-            0% {
-                opacity: 1;
-                -webkit-transform: translateX(80%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateX(0%);
-            }
-        }
-        
-        @-webkit-keyframes slideUp {
-            0% {
-                opacity: 1;
-                -webkit-transform: translateX(80%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateX(0%);
-            }
-        }
-        /*for heading of categories*/
-        
-        .slideup {
-            animation-name: slideup;
-            -webkit-animation-name: slideup;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
-            visibility: visible;
-            /*box-shadow: 5px 5px 3px #737373;*/
-        }
-        
-        @keyframes slideup {
-            0% {
-                opacity: 0;
-                -webkit-transform: translateX(-90%);
-            }
-            50% {
-                opacity: 0.6;
-                -webkit-transform: translateX(-8%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateX(0%);
-            }
-        }
-        
-        @-webkit-keyframes slideup {
-            0% {
-                opacity: 0;
-                -webkit-transform: translateX(-90%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateX(0%);
-            }
-        }
-        /*for heading of home*/
-        
-        .slideupp {
-            animation-name: slideupp;
-            -webkit-animation-name: slideupp;
-            animation-duration: 1.4s;
-            -webkit-animation-duration: 1.4s;
-            visibility: visible;
-            /*box-shadow: 5px 5px 3px #737373;*/
-        }
-        
-        @keyframes slideupp {
-            0% {
-                opacity: 0;
-                -webkit-transform: translateY(50%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateY(0%);
-            }
-        }
-        
-        @-webkit-keyframes slideupp {
-            0% {
-                opacity: 0;
-                -webkit-transform: translateY(50%);
-            }
-            100% {
-                opacity: 1;
-                -webkit-transform: translateY(0%);
-            }
-        }
-    
-    </style>
 
     <script src="https://kit.fontawesome.com/96d4385705.js"></script>
 
 </head>
 
 <body>
+    <div class="sticky-notice">
+        This site was a personal toy project built 7 years ago. So some elements may feel unprofessional :)
+    </div>
     <nav id="home">
         <ul id="navul">
-            
+
             <li class="navli">
                 <a href="#home" class="navlink">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-home nav-icon"></i>
                     <span class="display-lg">Home</span>
                 </a>
             </li>
-          	
-          	<li class="navli"><a href="Link Posts/links.html" class="navlink"><i class="fas fa-link"></i><span class="display-lg">LinkPosts</span></a></li>
 
-            <li class="navli"><a href="#mostPopular" class="navlink"><i class="fas fa-fire"></i><span class="display-lg">Popular</span></a></li>
-            <!-- <li class="navli"><a href="#mostRecent" class="navlink"><i class="fas fa-concierge-bell"></i><span class="display-lg">Recent</span></a></li> -->
-            <li class="navli"><a href="#contact" class="navlink"><i class="fas fa-phone"></i><span class="display-lg">Contact</span></a></li>
+            <li class="navli"><a href="Link Posts/links.html" class="navlink"><i class="fas fa-link nav-icon"></i><span
+                        class="display-lg">LinkPosts</span></a></li>
+
+            <li class="navli"><a href="#mostPopular" class="navlink"><i class="fas fa-fire nav-icon"></i><span
+                        class="display-lg">Popular</span></a></li>
+            <li class="navli"><a href="#contact" class="navlink"><i class="fas fa-phone nav-icon"></i><span
+                        class="display-lg">Contact</span></a></li>
         </ul>
     </nav>
 
-    <!-- <header id="home">
-        <h1 id="mostpopular" class="slideupp">Today I Learnt</h1>
-        <br>
-        <p style="text-align: center;">
-            As the name echoes, here we try to post articles that explain the single most important and invocable concept we learnt on that day. It could be on any topic.
-            <i id="mostpopular" style="font-size: 88%;">TodayILearnt is a simple article website that has a 'character' to it.</i>
-        </p>
-    </header> -->
-
-     <header id="home">
-        <h1 id="mostpopular" class="slideupp">Today I Learnt</h1>
+    <header id="home">
+        <h1>Today I Learnt</h1>
         <br>
         <div class="rel">
             <div id="div1" class="slide-div">
-                <p style="text-align: center;">
-                    As the name echoes, here we try to post articles that explain the single most important and invocable concept we learnt on that day. It could be on any topic.
-                    <i id="mostpopular" style="font-size: 88%;">TodayILearnt is a simple article website that has a 'character' to it.</i>
-
-                    <!-- <br>If you did not like any of the articles, then you have disliked one major aspect
-                                    in the day of that author's life, or the whole. As simple as that :)  -->
+                <p>
+                    As the name echoes, here we try to post articles that explain the single most important and
+                    invocable concept we learnt on that day. It could be on any topic.
+                    <i>TodayILearnt is a simple article website that has a 'character' to it.</i>
                 </p>
             </div>
             <div id="div2" class="slide-div">
-                <p style="text-align: center;">
+                <p>
                     Suggested Categories:
-                    <div class="row">
-                        <div class="col-md-6 a1">
-                            <a href="#" class="alink c-3">Ethical Hacking</a></div>
-                        <div class="col-md-6 a1">
-                            <a href="#" class="alink c-3">General</a></div>
+                <div class="row">
+                    <div class="col-md-6 a1">
+                        <a href="#" class="alink c-3">Ethical Hacking</a>
                     </div>
-                    <!-- <br>If you did not like any of the articles, then you have disliked one major aspect
-                                    in the day of that author's life, or the whole. As simple as that :)  -->
-                </p>
-            </div>
-            <div id="div3" class="slide-div">
-                <p style="text-align: center; font-size: large;">
-                	Suggested Articles:
-                    <div class="post col-5 col-sm-2" style="float: left;">
-                        <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                        <a href="Articles/General/WhatIsFire.html"  style="color: white; font-size: small;">What is fire?</a>
+                    <div class="col-md-6 a1">
+                        <a href="#" class="alink c-3">General</a>
                     </div>
-                    <!--  <div class="post col-5 col-sm-2" style="float: right;">
-                        <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                        <a href="#">What is fire?</a>
-                    </div>
-                    <div class="post col-5 col-sm-2" style="float: left;">
-                        <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                        <a href="#">What is fire?</a>
-                    </div> -->
-                     <div class="post col-5 col-sm-2" style="float: right;">
-                        <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                        <a href="Articles/General/WhatIsFire.html" style="color: white; font-size: small;">What is fire?</a>
-                    </div>
-                    <!-- 
-                         <a href="#">How money works?</a>
-                    
-                    <a href="#">How money works?</a>
-                    <a href="#">Why we need Domain Names?</a> -->
-
-                    <!-- <br>If you did not like any of the articles, then you have disliked one major aspect
-                                    in the day of that author's life, or the whole. As simple as that :)   -->
+                </div>
                 </p>
             </div>
         </div>
-
-        <!-- <p style="text-align: center;">
-                    If you did not like any of the articles, then you have disliked one major aspect
-                    in the day of that author's life, or the whole. As simple as that :)
-                </p> -->
-
-
     </header>
-
-        <section class="categories" id="categories">
-                <div class="container" id="cat">
-                    <h3 id="categories_heading_uh"><a id="categories_heading"> CATEGORIES: </h3></a>
-                    <div class="row">
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/EthicalHacking.html" class="alink c-1">Ethical Hacking</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/EthicalHacking.html" class="alink c-1">Computer Security</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a></a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a></a>
-                        </div>
-
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/ComputerProgramming.html" class="alink c-2">Computer Programming</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a></a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a></a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a></a>
-                        </div>
-
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/Islamic.html" class="alink c-3">Islamic</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/Hadiths.html" class="alink c-3">Hadiths</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/Quraan.html" class="alink c-3">The Noble Quraan</a>
-                        </div>
-                        <div class="col-sm-4 col-md-3 col-6 a1">
-                            <a href="categories/MuhammadSAW.html" class="alink c-3">Prophet Muhammad (Peace be upon him)</a>
-                        </div>
-                        <br>
-
-        <div class="row">
-            <div class="col-md-12">
-                <section class="popular" id="mostPopular">
-                    <h2>Our Most Popular Article</h2>
-                    <div class="row">
-
-                       <div class="post col-5 col-sm-2">
-                            <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="Articles/General/WhatIsFire.html">What is fire?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                        
-                         <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                         <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                         <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                         <div class="post col-5 col-sm-2">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">How money works?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="Articles/General/WhatIsFire.html">What is fire?</a>
-                        </div>
-
-
-
-                        <!-- <li class="col-sm-3">
-                            <img src="images/athiest_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Who created God?</a>
-                        </li> -->
-
+    <main>
+        <section class="section-categories section-divider" id="categories">
+            <div class="container" id="cat">
+                <h3>CATEGORIES:</h3>
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/EthicalHacking.html" class="alink c-1">Ethical Hacking</a>
                     </div>
-                </section>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/EthicalHacking.html" class="alink c-1">Computer Security</a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/ComputerProgramming.html" class="alink c-2">Computer Programming</a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/Islamic.html" class="alink c-3">Islamic</a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/Hadiths.html" class="alink c-3">Hadiths</a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/Quraan.html" class="alink c-3">The Noble Quraan</a>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-6 a1">
+                        <a href="categories/MuhammadSAW.html" class="alink c-3">Prophet Muhammad (Peace be upon him)</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12">
-                <section class="recent" id="mostRecent">
-                    <h2>Our Most Recent Article</h2>
-                    <div class="row">
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="Articles/General/WhatIsFire.html">What is fire?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="Articles/General/WhatIsFire.html">What is fire?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-                        <div class="post col-5 col-sm-2">
-                            <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
-                            <a href="#">Why we need Domain names?</a>
-                        </div>
-<!-- 
-                        <div class="col-sm-2">
+        </section>
 
-                            <a href="links.html">View More</a>
-                        </div> -->
+        <section class="section-recent section-divider" id="mostRecent">
+            <div class="container">
+                <h2>Our Most Recent Article</h2>
+                <div class.row>
+                    <div class="post col-5 col-sm-2">
+                        <img src="images/a2_misc_i1.jpg" alt="Why we need Domain names?" class="aimg">
+                        <a href="Articles/General/WhatIsFire.html">What is fire?</a>
                     </div>
+                    <div class="post col-5 col-sm-2">
+                        <img src="images/DomainName_1.jpg" alt="Why we need Domain names?" class="aimg">
+                        <a href="#">Why we need Domain names?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </section>
+        <section class="section-links section-divider">
+            <div class="container">
+                <div class="lp-description">
+                    <p>
+                        Often we learn things that are best understood from their original sources itself.
+                        <br>
+                        So we have created this section where we share links to other valuable web sources!<br>
+                    </p>
+                    <a href="Link Posts/links.html">
+                        + View</a>
+                </div>
+            </div>
+        </section>
 
-
-     <div class="row">
-        <div class="col-md-12">
-			<section class="popular" id="mostPopular">
-                <div class="lp-description" style="padding: 1rem; box-shadow: 3px;">
-					<h7>
-					Often we learn things that are best understood from their original sources itself.
-					<br>
-					So we have created this section where we share links to other valuable web sources!<br>
-					</h7>
-					<a href="Link Posts/links.html" style="font-size: larger; color: #2d5986; ">
-					+ View</a>
-				</div>
-             </section>
-         </div>
-     </div>
-</div>
-
-
-
-        <!-- <div class="containerbot">
-			  <img alt="For any feedback:" class="image">
-			  <div class="overlay">
-			    <div class="text"> We don't even know how to misuse e-mail ID's; so you can freely share :) </div>
-			  </div>
-			</div> -->
-
-        <section class="formbkg" id="contact">
-            <div class="frm">
+        <section class="section-contact section-divider" id="contact">
+            <div class="container">
                 <h2>Contact Form</h2>
                 <form action="#" method="post" onsubmit="validate()" class="frm1">
                     <div class="group">
@@ -418,286 +153,28 @@
         </section>
     </main>
 
-
-    <!--  <p>Scroll down this page.</p>
-		<p>When you have scrolled 350px, an image will slide in.</p>
-
-		<hr>
-		<div class="col-1">
-		  <img id="myImg" src="../images/home_reloded4.jpg" width="500" height="300">
-		</div>
-
-		<div class="col-2">
-		  Just some text..
-		</div>
- -->
-
-
-
-    <footer>
-        <div class="footer_container">
-            <!-- <div class="row">
-                    <div class="col-md-4 col-sm-6 fcont">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">App Development</a></li>
-                            <li><a href="#">Atheism</a></li>
-                            <li><a href="#">Islamic</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="#">Linux</a></li>
-                            <li><a href="#">Important</a></li>
-                            <li><a href="#">General</a></li>
-                        </ul>
-                    </div> -->
-
-            <div class="col-md-4 col-sm-6 fcont">
-                <h3>Contact Us: </h3>
-                <ul>
-                    <li><a href="#">
-                               E-mail: todayilearned.offl@gmail.com
-                            </a></li>
-                    <li><a href="#">
-                                Phone: 8787878787
-                            </a></li>
-                </ul>
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 fcont">
+                    <h3>Contact Us: </h3>
+                    <ul>
+                        <li><a href="mailto:todayilearned.offl@gmail.com"><i class="fas fa-envelope"></i>
+                                ameenrahman.2000@gmail.com</a></li>
+                        <li><a href="tel:8787878787"><i class="fas fa-phone"></i>6379166319</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="skdjk">
-            <p>&copy;This Site Is Created And Maintained By Ameen And DeneshRaj</p>
-        </div>
-        </div>
-    </footer>
+    </footer> -->
 
-    <!--  <div class="containerbot">
-		  <img alt="..." class="image">
-		  <div class="overlay">
-		    <div class="text">The End!</div>
-		  </div>
-		</div> -->
-
-
-    <!-- <div id="div1">linear</div>
-		<div id="div2">ease</div>
-		<div id="div3">ease-in</div>
-		<div id="div4">ease-out</div>
-		<div id="div5">ease-in-out</div>
- -->
-
-
-
-
-    <!-- <h1>Comment's:</h1>
-		<?php
-		$i  = addslashes($_POST['a']);
-		$ip = addslashes($_POST['b']);
-		$a  = addslashes($_POST['c']);
-		$b  = addslashes($_POST['d']);
-		if(isset($i) & isset($ip) & isset($a) & isset($b))
-		{
-		    $r = mysql_query("SELECT COUNT(*) FROM $db.ban WHERE ip=$ip"); //Check if banned
-		    $r = mysql_fetch_array($r);
-		    if(!$r[0]) //Phew, not banned
-		    {
-		        if(mysql_query("INSERT INTO $db.com VALUES ($a, $b, $ip, $i)"))
-		        {
-		            ?>
-		            <script type="text/javascript">
-		                window.location="/index.php?id=".<?php echo $i; ?>;
-		            </script>
-		            <?php
-		        }
-		        else echo "Error, in mysql query";
-		    }
-		    else echo "Error, You are banned.";
-		}
-		$x = mysql_query("SELECT * FROM $db.com WHERE i=$i");
-		while($r = mysql_fetch_object($x) echo '<div class="c">'.$r->a.'<p>'.$row->b.'</p> </div>';
-
-		?>
-		<h1>Leave a comment, pl0x:</h1>
-		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-		    <input type="hidden" name="a" value="<?php $echo $_GET['id']; ?>" />
-		    <input type="hidden" name="b" value="<?php $echo $_SERVER['REMOTE_ADDR']; ?>" />
-		    <input type="text" name="c" value="Name"/></br>
-		    <textarea name="d">
-		    </textarea>
-		    <input type="submit" />
-		</form> -->
-
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
-    <script>
-        $('document').ready(function() {
-            $('#ham').on('click', function() {
-                $('#navul').toggleClass('resli');
-            });
-
-            $('#email').on('focusout', function() {
-                email = $("#email");
-
-                if (isEmail(email)) {
-                    email.removeClass('invalid');
-                } else if (!isEmail(email) && email.val() != "") {
-                    email.addClass('invalid');
-                } else {
-                    email.removeClass('invalid');
-                }
-            });
-
-            function isEmail(email) {
-                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                return regex.test(email);
-            }
-        });
-
-
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        function myFunction() {
-
-            // document.getElementById("mostpopular").className = "slideupp";
-
-
-            if (document.body.scrollTop > 230 || document.documentElement.scrollTop > 230) {
-                document.getElementById("categories").className = "slideUp";
-            }
-
-            // if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-            //   document.getElementById("mostpopular").className = "slideupp";
-            // }
-
-            // [Ameen, com]: The portion that makes the heading of categories move.
-            //  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-            //   document.getElementById("categories_heading_uh").className = "slideup";
-            // }
-
-        }
-
-
-
-        //           window.onscroll = function() {myFunction()};
-
-        // 	function myFunction() {
-        // 	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        // 	    document.getElementById("myImg").className = "slideUp";
-        //   }
-        // }
-    </script> -->
-
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
-    <script>
-        $('document').ready(function() {
-            $('#ham').on('click', function() {
-                $('#navul').toggleClass('resli');
-            });
-
-            $('#email').on('focusout', function() {
-                email = $("#email");
-
-                if (isEmail(email)) {
-                    email.removeClass('invalid');
-                } else if (!isEmail(email) && email.val() != "") {
-                    email.addClass('invalid');
-                } else {
-                    email.removeClass('invalid');
-                }
-            });
-
-            function slideText(div1, div2, div3) {
-                setTimeout(function() {
-                    $(div1).css({
-                        "display": "block",
-                        "transform": "translateX(0rem)",
-                        "transition": "2.5s"
-                    });
-                    $(div2).css({
-                        "display": "none",
-                        "transform": "translateX(-100rem)",
-                        "transition": "2.5s"
-                    });
-
-                    $(div3).css({
-                        "display": "block",
-                        "transform": "translateX(100rem)",
-                        "transition": "2.5s"
-                    });
-                }, 1000);
-            }
-
-            function continuousSlide() {
-                setTimeout(function() {
-                    $('#div2').css({
-                        "display": "block"
-                    });
-                    slideText("#div2", "#div3", "#div1");
-                }, 4000);
-                setTimeout(function() {
-                    $('#div3').css({
-                        "display": "block"
-                    });
-                    slideText("#div3", "#div1", "#div2");
-                }, 8000);
-                setTimeout(function() {
-                    $('#div1').css({
-                        "display": "block"
-                    });
-                    slideText("#div1", "#div2", "#div3");
-                }, 12000);
-            }
-            continuousSlide();
-            setInterval(continuousSlide, 15000);
-
-            function isEmail(email) {
-                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                return regex.test(email);
-            }
-        });
-
-
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        function myFunction() {
-
-            // document.getElementById("mostpopular").className = "slideupp";
-
-
-            if (document.body.scrollTop > 230 || document.documentElement.scrollTop > 230) {
-                document.getElementById("categories").className = "slideUp";
-            }
-
-            // if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-            //   document.getElementById("mostpopular").className = "slideupp";
-            // }
-
-            // [Ameen, com]: The portion that makes the heading of categories move.
-            //  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-            //   document.getElementById("categories_heading_uh").className = "slideup";
-            // }
-
-        }
-
-
-
-        //           window.onscroll = function() {myFunction()};
-
-        // 	function myFunction() {
-        // 	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        // 	    document.getElementById("myImg").className = "slideUp";
-        //   }
-        // }
-    </script>
 
 </body>
 
